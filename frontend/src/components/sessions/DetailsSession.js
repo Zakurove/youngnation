@@ -81,16 +81,19 @@ export class DetailsSession extends Component {
         // The loading handler
         if (this.state.isReady == false) {
           if (this.state.call == true) {  
+            this.props.actions.getAllSessions()
             if (this.state.getSessions == true) {  
             this.props.actions.getAllSessions()
             this.setState({ getSessions: false })
             }
             if (this.props.sessions.length > 0) {
+              this.props.actions.getAllSessions()
               this.setState({ call: false })
             }
         }
         if (this.state.call == false) {
-          setTimeout(() => this.setState({ isReady: true }), 500);
+          this.props.actions.getAllSessions()
+          setTimeout(() => this.setState({ isReady: true }), 2000);
           }
       }
       // The loading component
@@ -99,6 +102,7 @@ export class DetailsSession extends Component {
         <Loader/>
         );
         }
+        if (this.state.isReady == true) {
     return (
       <Fragment>
 
@@ -162,7 +166,14 @@ export class DetailsSession extends Component {
                         <h1 className="text-center  my-3" style={{fontSize: "3rem",color: "#FFC144", fontWeight: "bold"}} > التنس </h1>
                         </div>
                     )} 
-                                                                                       
+                  {/* Confused */}
+               {this.props.session.sport == 
+                      "DragonRiding" && (
+                        <div className="m-5 justify-content-center pt-5 row">
+                        <img src="https://tawassam.ams3.digitaloceanspaces.com/Test1/media/confused.png" style={{width: "30%"}} class="img-fluid ps-2 text-center" />
+                        <h2 className="text-center my-3" style={{color: "#FFC144", fontWeight: "bold"}}> انت مميز لدرجة لم تمكننا من تحديد الرياضة الأنسب, الرجاء مراجعة الفريق</h2>
+                        </div>
+                    )}                                                                        
                 {/* Confused */}
                 {(this.props.session.sport !== 
                       "swimming") && (this.props.session.sport !== 
@@ -172,8 +183,23 @@ export class DetailsSession extends Component {
                               "volleyball") && (this.props.session.sport !== 
                                 "judo") && (
                         <div className="m-5 justify-content-center pt-5 row">
-                        <img src="https://tawassam.ams3.digitaloceanspaces.com/Test1/media/confused.png" style={{width: "30%"}} class="img-fluid ps-2 text-center" />
-                        <h2 className="text-center my-3" style={{color: "#FFC144", fontWeight: "bold"}}> انت مميز لدرجة لم تمكننا من تحديد الرياضة الأنسب, الرجاء مراجعة الفريق</h2>
+                        	  <div className="row">
+		<div className="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 mx-auto">
+            <img
+              src=
+                "https://tawassam.ams3.digitaloceanspaces.com/Test1/media/talentmineLogo.png"
+              
+              className="img-fluid mt-5 mb-4"
+              alt="Responsive image"
+              style={{width: "150%"}}
+            />
+            </div>
+	  </div>
+	  {/* <div id="loadingProgressG">
+		<div id="loadingProgressG_1" className="loadingProgressG"></div>
+	</div> */}
+  <div className="text-center"><img id="loading-image" style={{width: "5%" }}src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Loading_2.gif?20170503175831" alt="Loading..." /></div>
+
                         </div>
                     )} 
                                       
@@ -189,6 +215,7 @@ export class DetailsSession extends Component {
       </Fragment>
     );
   }
+}
 }
 
 function getSessionById(sessions, id) {
