@@ -1,15 +1,15 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment} from 'react'
 import { connect } from 'react-redux';
 import { bindActionCreators } from "redux";
-
 import { Link, Redirect } from "react-router-dom";
 import PropTypes from 'prop-types';
-import { Button } from "react-bootstrap";
 import * as sessionActions from "../../actions/sessions.js";
 import { createMessage } from "../../actions/messages";
 import Loader from "../layout/Loader.js";
-
-
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
+import Button from 'react-bootstrap/Button';
+import Tooltip from 'react-bootstrap/Tooltip';
 
  export class FormSession extends Component {
    state = {
@@ -27,6 +27,8 @@ import Loader from "../layout/Loader.js";
      };
 
      onChange = e => this.setState ({ [e.target.name]: e.target.value });
+
+
 
      onSubmit = (e) => {
        e.preventDefault();
@@ -131,36 +133,40 @@ import Loader from "../layout/Loader.js";
                 />
               </div>
               <div className="form-group">
+           
                 <h4 className="talentminePurple mt-3 mb-2">طول الذراع:</h4> 
+                <span className="text-secondary mb-2">شرح مفصل عن كيفية اخذ طول الذراع</span>
                 <input
                   className="form-control"
                   type="number"
                   name="armL"
                   onChange={this.onChange}
                   value={armL}
-                  placeholder="انظر للتفاصيل"
+                  placeholder="cm"
                 />
               </div>
               <div className="form-group">
                 <h4 className="talentminePurple mt-3 mb-2">طول الساق:</h4> 
+                <span className="text-secondary mb-2">شرح مفصل عن كيفية اخذ طول الساق</span>
                 <input
                   className="form-control"
                   type="number"
                   name="legL"
                   onChange={this.onChange}
                   value={legL}
-                  placeholder="انظر للتفاصيل"
+                  placeholder="cm"
                 />
               </div>
               <div className="form-group">
                 <h4 className="talentminePurple mt-3 mb-2">محيط الصدر:</h4> 
+                <span className="text-secondary mb-2">شرح مفصل عن كيفية اخذ محيط الصدر </span>
                 <input
                   className="form-control"
                   type="number"
                   name="chestG"
                   onChange={this.onChange}
                   value={chestG}
-                  placeholder="انظر للتفاصيل"
+                  placeholder="cm"
                 />
               </div>
               <hr/>

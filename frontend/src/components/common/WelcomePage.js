@@ -56,7 +56,7 @@ export class WelcomePage extends Component {
             <div className="row justify-content-center mb-5"><img src="https://tawassam.ams3.digitaloceanspaces.com/Test1/media/TalentmineStar.png" style={{width: "30%"}} class="img-fluid ps-2" /></div>
           
           <h1 style={{fontSize: "3.0rem"}} className="me-2 p-3 text-center">إكتشف وطور موهبتك الرياضية</h1>
-          <h3 className="me-5 p-3 text-center">في تالينت-ماين نساعدك على إكتشاف في أي رياضة تكمن موهبتك بناء على تحليل قياساتك, خبراتك وتفضيلاتك بإستخدام الذكاء الاصطناعي.</h3>
+          <h3 className="me-5 p-3 text-center">في تالنت-ماين نساعدك على إكتشاف في أي رياضة تكمن موهبتك بناء على تحليل قياساتك, خبراتك وتفضيلاتك بإستخدام الذكاء الاصطناعي.</h3>
 
           <div className="mt-4 pt-5 justify-content-center text-center px-3">
           <Link to="/session/create">

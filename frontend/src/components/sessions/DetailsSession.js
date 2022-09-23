@@ -115,7 +115,7 @@ export class DetailsSession extends Component {
               <h1 className="talentmineBlue text-center mb-5 mt-3">
                 أهلا بالموهوب  <span style={{color: "#FFC144", fontWeight: "bold"}}>{this.props.session.owner_username}</span>
               </h1>
-              <h2 className="text-center">حللنا قياساتك الجسدية واهتماماتك وبناء عليها استنتجنا ان هذه الرياضة الأنسب لك مبدئيا</h2>
+              <h2 className="text-center">حللنا قياساتك الجسدية واهتماماتك وبناء عليها استنتجنا ان هذه الرياضة الأنسب لك</h2>
               </div>
               
               {/* Swimming */}
@@ -204,7 +204,7 @@ export class DetailsSession extends Component {
                     )} 
                                       
               <div className="mt-4 pt-3 justify-content-center text-center px-3">
-              <h3 className="text-center mb-5">استثمر موهبتك واصقلها عن طريق اخذ احد المسارات من شركاءنا الذين يستخدمون تالينت-ماين المطور لاقتراحات أكثر ومعلومات أعمق </h3>
+              <h3 className="text-center mb-5">استثمر موهبتك واصقلها عن طريق اخذ احد المسارات من شركاءنا الذين يستخدمون تالنت-ماين  </h3>
           <Link to="/soon">
             <button type="button" className="btn btn-info btn-lg talentminePurpleBG" style={{padding: "0.7rem 1.5rem", fontSize: "2.3rem", borderRadius: "2.9rem", borderColor:"#523b93"}}>اصقل موهبتك</button>
             </Link>
