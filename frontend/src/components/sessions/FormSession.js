@@ -153,13 +153,14 @@ import Tooltip from 'react-bootstrap/Tooltip';
                   type="number"
                   name="legL"
                   onChange={this.onChange}
-                  value={legL}
                   placeholder="cm"
+                  value={legL}
+                  
                 />
               </div>
               <div className="form-group">
                 <h4 className="talentminePurple mt-3 mb-2">محيط الصدر:</h4> 
-                <span className="text-secondary mb-2">شرح مفصل عن كيفية اخذ محيط الصدر </span>
+                <span className="text-secondary mb-2" >شرح مفصل عن كيفية اخذ محيط الصدر </span>
                 <input
                   className="form-control"
                   type="number"
