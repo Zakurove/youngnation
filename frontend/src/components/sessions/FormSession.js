@@ -129,13 +129,15 @@ import Tooltip from 'react-bootstrap/Tooltip';
                   name="weight"
                   onChange={this.onChange}
                   value={weight}
-                  placeholder="cm"
+                  placeholder="kg"
                 />
               </div>
-              <div className="form-group">
+              <div className="form-group"><span className="text-secondary mb-2"></span>
            
                 <h4 className="talentminePurple mt-3 mb-2">طول الذراع:</h4> 
-                <span className="text-secondary mb-2">شرح مفصل عن كيفية اخذ طول الذراع</span>
+                
+                <i className="far fa-question-circle float-end mb-2" style={{color: "#FFC144", fontSize: '1.1rem'}}></i>
+                <span className="text-secondary mb-2">يقاس من اول الاصبع الوسطي والي اول نقطة عظمية في اعلى الكتف باستخدام شريط قياس</span>
                 <input
                   className="form-control"
                   type="number"
@@ -147,7 +149,8 @@ import Tooltip from 'react-bootstrap/Tooltip';
               </div>
               <div className="form-group">
                 <h4 className="talentminePurple mt-3 mb-2">طول الساق:</h4> 
-                <span className="text-secondary mb-2">شرح مفصل عن كيفية اخذ طول الساق</span>
+                <i className="far fa-question-circle float-end mb-2" style={{color: "#FFC144", fontSize: '1.1rem'}}></i>
+                <span className="text-secondary mb-2">يقاس من خارج القدم من الارض الى عظمة الحوض العلوية باستخدام شريط قياس</span>
                 <input
                   className="form-control"
                   type="number"
@@ -160,7 +163,8 @@ import Tooltip from 'react-bootstrap/Tooltip';
               </div>
               <div className="form-group">
                 <h4 className="talentminePurple mt-3 mb-2">محيط الصدر:</h4> 
-                <span className="text-secondary mb-2" >شرح مفصل عن كيفية اخذ محيط الصدر </span>
+                <i className="far fa-question-circle float-end mb-2" style={{color: "#FFC144", fontSize: '1.1rem'}}></i>
+                <span className="text-secondary mb-2">يقاس مع الشهيق الاقصى بلف شريط القياس حول الصدر وحساب قيمة المحيط للصدر كامل</span>
                 <input
                   className="form-control"
                   type="number"
