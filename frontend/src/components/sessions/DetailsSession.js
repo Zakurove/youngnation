@@ -124,6 +124,9 @@ export class DetailsSession extends Component {
                         <div className="m-5 justify-content-center pt-5 row">
                         <img src="https://tawassam.ams3.digitaloceanspaces.com/Test1/media/swimming.png" style={{width: "30%"}} class="img-fluid ps-2 text-center" />
                         <h1 className="text-center  my-3" style={{fontSize: "3rem",color: "#FFC144", fontWeight: "bold"}} > السباحة </h1>
+                        <p className="mt-5" style={{fontSize: "1.8rem"}}>
+                        تعتبر السباحة من الرياضات التي تستخدم كامل عضلات الجسم وتتطلب مجهود عالي وتمارس بشكل كبير للترفيه الى جانب اهميتها في الحفاط على النفس في البيئية المائية  وتحتاج السباحة الى مستوى عالي من التحمل الدوري التنفسي والتحمل العضلي والسرعة الانتقالية.
+                        </p>
                         </div>
                     )}
                {/* Basketball */}
@@ -132,6 +135,9 @@ export class DetailsSession extends Component {
                         <div className="m-5 justify-content-center pt-5 row">
                         <img src="https://tawassam.ams3.digitaloceanspaces.com/Test1/media/basketball.png" style={{width: "30%"}} class="img-fluid ps-2 text-center" />
                         <h1 className="text-center  my-3" style={{fontSize: "3rem",color: "#FFC144", fontWeight: "bold"}} > كرة السلة </h1>
+                        <p className="mt-5" style={{fontSize: "1.8rem"}}>
+                        كرة السلة لعبة جماعية يتنافس فيها فريقان كل فريق يتكون من خمس العاب وكل فريق يسعى لتوجيه اهداف في سلة الخصم في ابعاد مختلفة وتعتمد على الأيدي فقط وتتطلب مستوى عالي من التحمل والرشاقة والتوافق.
+                                                </p>
                         </div>
                     )} 
               {/* Fencing */}
@@ -140,6 +146,9 @@ export class DetailsSession extends Component {
                         <div className="m-5 justify-content-center pt-5 row">
                         <img src="https://tawassam.ams3.digitaloceanspaces.com/Test1/media/fencing.png" style={{width: "30%"}} class="img-fluid ps-2 text-center" />
                         <h1 className="text-center  my-3" style={{fontSize: "3rem",color: "#FFC144", fontWeight: "bold"}} > المبارزة </h1>
+                        <p className="mt-5" style={{fontSize: "1.8rem"}}>
+                        المبارزة هي لعبة تاريخية موجودة في كل الحضارات ويتنافس فيها اللاعبان على لمس الخصم بالسيف المدبب وتستخدم بذلات وقائية لتجنب الاصابات وتعتمد على الرشاقة والدقة والتوازن والسرعة الحركية.
+                                                                        </p>
                         </div>
                     )} 
                {/* Judo */}
@@ -148,6 +157,9 @@ export class DetailsSession extends Component {
                         <div className="m-5 justify-content-center pt-5 row">
                         <img src="https://tawassam.ams3.digitaloceanspaces.com/Test1/media/boxing.png" style={{width: "30%"}} class="img-fluid ps-2 text-center" />
                         <h1 className="text-center  my-3" style={{fontSize: "3rem",color: "#FFC144", fontWeight: "bold"}} > الجودو </h1>
+                        <p className="mt-5" style={{fontSize: "1.8rem"}}>
+                        تطورت الجودو من المصارعة اليابانية في فترة الثمانينات في القرن التاسع عشر حيث اضيف اليها اساليب التربية البدنية والأخلاقية والغي منها كافة الحركات الخطرة وتحتاج الى ذكاء ومستوى عالي من التوازن والسرعة الحركية لاتقان مهاراتها.
+                                                                                                </p>
                         </div>
                     )} 
                {/* Volleyball */}
@@ -156,6 +168,9 @@ export class DetailsSession extends Component {
                         <div className="m-5 justify-content-center pt-5 row">
                         <img src="https://tawassam.ams3.digitaloceanspaces.com/Test1/media/beach-volleyball.png" style={{width: "30%"}} class="img-fluid ps-2 text-center" />
                         <h1 className="text-center  my-3" style={{fontSize: "3rem",color: "#FFC144", fontWeight: "bold"}} > كرة الطائرة </h1>
+                        <p className="mt-5" style={{fontSize: "1.8rem"}}>
+الطائرة هي لعبة جماعية تجمع بين فريقين حيث يتكون كل فريق من ستة لاعبين ويتمثل اسلوب لعبها بضرب الكرة بين الفريقين من فوق شبكة عرضية موجودة في وسط الملعب, ويسعى كل فريق الى جعل الكرة تلمس ارض الخصم ويشترط ان يكون لكل فريق 3 لمسات على الأكثر لاتمام الهجمة ضد الفريق الآخر وتحتاج اللعبة الى اللياقة والدقة وسرعة رد الفعل.                        
+</p>
                         </div>
                     )} 
                {/* Tennis */}
@@ -164,6 +179,9 @@ export class DetailsSession extends Component {
                         <div className="m-5 justify-content-center pt-5 row">
                         <img src="https://tawassam.ams3.digitaloceanspaces.com/Test1/media/tennis.png" style={{width: "30%"}} class="img-fluid ps-2 text-center" />
                         <h1 className="text-center  my-3" style={{fontSize: "3rem",color: "#FFC144", fontWeight: "bold"}} > التنس </h1>
+                        <p className="mt-5" style={{fontSize: "1.8rem"}}>
+                        كرة التنس والمعروفة ايضا بكرة المضرب هي رياضة يتنافس فيها لاعبان او فريقان يتكون كل فريق منهم من لاعبين, حيث يتنافس فيها اللاعبين بضرب الكرة من اعلى شبكة بعرض الملعب ويقوم الخصم بردها قبل لمس ارضية الملعب مرة اخرى, ويتم احتساب النقاط تبعا لقوانين محددة وضعها الاتحاد الدوري للتنس وتتطلب مهارة عالية من الدقة  والرشاقة وسرعة رد الفعل والقوة المتميزة بالسرعة.
+                                                                                                                        </p>
                         </div>
                     )} 
                   {/* Confused */}
@@ -204,8 +222,8 @@ export class DetailsSession extends Component {
                     )} 
                                       
               <div className="mt-4 pt-3 justify-content-center text-center px-3">
-              <h3 className="text-center mb-5">استثمر موهبتك واصقلها عن طريق اخذ احد المسارات من شركاءنا الذين يستخدمون تالنت-ماين  </h3>
-          <Link to="/soon">
+              {/* <h3 className="text-center mb-4 talentminePurple">استثمر موهبتك واصقلها عن طريق اخذ احد المسارات من شركاءنا الذين يستخدمون تالنت-ماين  </h3> */}
+          <Link to="/advance">
             <button type="button" className="btn btn-info btn-lg talentminePurpleBG" style={{padding: "0.7rem 1.5rem", fontSize: "2.3rem", borderRadius: "2.9rem", borderColor:"#523b93"}}>اصقل موهبتك</button>
             </Link>
           </div>

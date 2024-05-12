@@ -60,7 +60,7 @@ body {
 	color: #00D0C5 !important;
 }
 .talentmineBlue {
-	color: #fd5800 !important;
+	color: #0dcaf0 !important;
 }
 /* #4ecdc4 */
 .tawassamBlueBG {
@@ -69,18 +69,18 @@ body {
 	background-color: #10a1b6 !important;
 }
 .talentminePurple {
-	color: #229fa1 !important;
+	color: #523b93 !important;
 }
 /* #4ecdc4 */
 .talentminePurpleBG {
 	font-weight: bold;
 	color: #fff;
-	background-color: #005e60 !important;
+	background-color: #523b93 !important;
 }
 .talentmineBlueBG {
 	font-weight: bold;
 	color: #fff;
-	background-color: #ff5900 !important;
+	background-color: #0dcaf0 !important;
 }
 a.tawassamBlueBG:hover {
 	color: #fff;

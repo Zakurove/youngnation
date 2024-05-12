@@ -8,18 +8,10 @@ export class Footer extends Component {
           <div className="row">
             <div className="d-block mx-auto pt-1">
               <div className="my-2 flex-center">
-                <a
-                  className="tw-ic talentminePurple pl-4 ms-2"
-                  href="https://twitter.com/Talentmine"
-                >
-                  <i className="fab fa-twitter  me-md-5 me-3 fa-2x">
-                    {" "}
-                  </i>
-                </a>
 
                 <a
                   className="tw-ic talentminePurple"
-                  href="mailto:talentmine@gmail.com"
+                  href="mailto:contact@young-nation.com"
                 >
                   <i className="far fa-envelope me-md-5 me-3 fa-2x">
                     {" "}
@@ -31,10 +23,10 @@ export class Footer extends Component {
           
 
           <div className="footer-copyright text-center py-3 talentminePurple text-decoration-none" style={{fontWeight: "bold"}}>
-          2022 Copyright:©
-          <s href="mailto:tawassam.med@gmail.com"className="text-decoration-none talentmineBlue" style={{fontWeight: "bold"}}>
+          2024 Copyright:©
+          <s href="mailto:contact@young-nation.com"className="text-decoration-none talentmineBlue" style={{fontWeight: "bold"}}>
             {" "}
-            Talentmine
+            Young Nation Academy
           </s>
         </div>
         </div>

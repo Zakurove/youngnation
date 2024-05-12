@@ -31,6 +31,7 @@ import WelcomePage from "./common/WelcomePage.js";
 import FormSession from "./sessions/FormSession.js";
 import DetailsSession from "./sessions/DetailsSession.js";
 import Soon from "./common/Soon.js";
+import AcademiesSoon from "./common/AcademiesSoon.js";
 
 
 
@@ -57,9 +58,10 @@ export default function App() {
                   <Route  path="/login" component={Login} />
                   {/* <Route  path="/welcome" component={WelcomePage} /> */}
                   <PrivateRoute exact path="/" component={WelcomePage} />
-                  <PrivateRoute exact path="/soon" component={Soon} />
+                  <Route exact path="/soon" component={Soon} />
+                  <Route exact path="/advance" component={AcademiesSoon} />
                   <PrivateRoute exact path="/session/create" component={(props) => <FormSession {...props} />} />
-                  <PrivateRoute exact path="/session/:id" component={(props) => <DetailsSession {...props} />} />
+                  <Route exact path="/session/:id" component={(props) => <DetailsSession {...props} />} />
 
 
                 </Switch>

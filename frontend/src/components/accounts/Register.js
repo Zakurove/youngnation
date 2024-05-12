@@ -56,11 +56,10 @@ export class Register extends Component {
     }
     const { name, email, password, password2 } = this.state;
     return (
-      <div className="" style={{backgroundImage: `url("https://tawassam.ams3.digitaloceanspaces.com/Test1/media/talentmineLoginBG.png")`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "right top", paddingBottom: "15rem" }}>                         
-      <hr className="style-five"/>
-      <div className="container pt-5" >
-      <div className="row">
-            <div className="col-md-5 mx-auto pt-5">
+      <Fragment>
+      <div className="container mb-5 pb-5">
+      <div className="row justify-content-center mb-5">
+            <div className="col-md-5 mx-auto pt-5 mb-5">
             <a href="#/welcome">
             <img
               src={
@@ -71,12 +70,24 @@ export class Register extends Component {
               style={{ width: "150%" }}
             />
             </a>
+            
             </div>
           </div>
-        <div className="row flex-lg-row-reverse">
 
-        <div className="col-md-5 mx-auto">           
-         <form onSubmit={this.onSubmit} className="mt-5">
+        <div className="row justify-content-center">
+          <div className="col-lg-6">
+            <img
+              src={
+                "https://tawassam.ams3.digitaloceanspaces.com/Test1/media/horseriding.jpg"
+
+              }
+              className="img-fluid float-right pe-5"
+              alt="Responsive image"
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div className="col-lg-6 pt-5">           
+         <form onSubmit={this.onSubmit} className="mt-5 pt-5">
             <h3 className="talentmineBlue mb-3 text-center">التسجيل</h3>
                 <div className="input-group form-group mt-3">
 
@@ -162,31 +173,13 @@ export class Register extends Component {
               </form>
                </div>
 
-            
+          
 
 
         </div>
-        {/* <div className="d-flex justify-content-center">
-          <div className="card" style={{ height: "460px" }}>
-            <div className="card-header">
-              <h3>Sign Up</h3>
-            </div>
-            <div className="card-body pb-5">
-              
-            </div> */}
-
-            {/* <div className="card-footer">
-              <div className="d-flex justify-content-center links">
-                Already have an account?{" "}
-                <Link to="/login" className="text-info">
-                  Login
-                </Link>
-              </div>
-            </div> */}
-          </div>
-        {/* </div>
-      </div> */}
       </div>
+    </Fragment>
+     
     );
   }
 }

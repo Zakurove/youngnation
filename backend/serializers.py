@@ -29,7 +29,7 @@ class SessionSerializer(serializers.ModelSerializer):
         armL=validated_data.get('armL', 'no-armL')
         #Where the magic happens!
         filename = 'SVM82Model.sav'
-        example = [height,  weight,  armL,  legL,  chestG ]
+        example = [int(height),  int(weight), int(armL),  int(legL),  int(chestG) ]
         exampleNP = np.array(example)
         input = np.reshape(exampleNP, (-1,5))
         loaded_model = pickle.load(open(filename, 'rb'))

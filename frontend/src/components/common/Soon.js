@@ -28,7 +28,7 @@ export class Soon extends Component {
 
         <div className="row justify-content-around mt-5 mb-5 pb-5">
         <div className="col-6 pt-5">
-          <h1 className="talentminePurple mx-3 my-5">هذه النسخة الأولية للمنصة وعملت أثناء تحدي الذكاء الاصطناعي في الرياضة</h1>
+          <h1 className="talentminePurple mx-3 my-5">هذه النسخة التجريبية للمنصة</h1>
           <h1 className="talentmineBlue mx-3 my-5">لا زلنا نعمل باستمرار لتطوير المنصة, فانتظرونا!</h1>
         </div>
         <div className="col-6">

@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path, re_path
-from django.conf.urls import url
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls.static import static
 from django.conf import settings
@@ -27,7 +26,7 @@ urlpatterns = [
     path('', include('frontend.urls')),
     path('', include('backend.urls')), 
     path('', include('accounts.urls')),
-    url(r'^fp/', include('django_drf_filepond.urls')),
+    re_path(r'^fp/', include('django_drf_filepond.urls')),
     
     
 

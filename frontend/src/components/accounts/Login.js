@@ -67,11 +67,10 @@ onChangeCheckbox = event => {
 
     const { email, password, isChecked } = this.state;
     return (
-      <div className="" style={{backgroundImage: `url("https://tawassam.ams3.digitaloceanspaces.com/Test1/media/talentmineLoginBG.png")`, backgroundSize: 'cover', backgroundRepeat: "no-repeat", backgroundPosition: "right top", paddingBottom: "15rem"  }}>                          
-        <hr className="style-five"/>
-        <div className="container pt-5">
-          <div className="row">
-            <div className="col-md-5 mx-auto pt-5">
+      <Fragment>
+      <div className="container mb-5 pb-5">
+      <div className="row justify-content-center mb-5">
+            <div className="col-md-5 mx-auto pt-5 mb-5">
             <a href="#/welcome">
             <img
               src={
@@ -85,10 +84,24 @@ onChangeCheckbox = event => {
             
             </div>
           </div>
+
+        <div className="row">
+          <div className="col-lg-7">
+            <img
+              src={
+                "https://tawassam.ams3.digitaloceanspaces.com/Test1/media/tennis.jpg"
+
+              }
+              className="img-fluid float-right"
+              alt="Responsive image"
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div className="col-lg-5">
           <div className="row">
-            <div className="col-md-5 mx-auto">
+            <div className=" mx-auto">
               <form className="mt-5">
-                <h3 className="talentmineBlue mb-3 ">تسجيل الدخول</h3>
+                <h3 className="talentmineBlue mb-3 ps-5">تسجيل الدخول</h3>
 
                 <div className="input-group form-group mt-4">
                     <span className="input-group-text iconInput ">
@@ -150,78 +163,23 @@ onChangeCheckbox = event => {
                 </div>
                 <hr/>
                 <div className="talentmineBlue">
-                 ليس لديك حساب؟
+                   ليس لديك حساب؟
                  <Link to="/register" className="talentmineBlue" style={{fontWeight: "bold", textDecoration: "none"}}>
-                  سجل 
+                   سجل  
                 </Link>
               </div>
-                {/* <p className="forgot-password text-right">
-            Forgot <a href="#">password?</a>
-          </p> */}
               </form>
             </div>
             
           </div>
         </div>
-        {/* <div className="d-flex justify-content-center h-100">
-          <div className="card">
-            <div className="card-header">
-              <h3>Login</h3>
-            </div>
-            <div className="card-body">
-              <form onSubmit={this.onSubmit}>
-                <div className="input-group form-group">
-                  <div className="input-group-prepend">
-                    <span className="input-group-text">
-                      <i className="fas fa-user"></i>
-                    </span>
-                  </div>
-                  <input
-                    type="text"
-                    className="form-control"
-                    name="username"
-                    onChange={this.onChange}
-                    value={username}
-                    placeholder="Username"
-                  />
-                </div>
+          
 
-                <div className="input-group form-group">
-                  <div className="input-group-prepend">
-                    <span className="input-group-text">
-                      <i className="fas fa-key"></i>
-                    </span>
-                  </div>
-                  <input
-                    type="password"
-                    className="form-control"
-                    name="password"
-                    onChange={this.onChange}
-                    value={password}
-                    placeholder="Password"
-                  />
-                </div>
 
-                <div className="form-group">
-                  <input
-                    type="submit"
-                    className="btn btn-warning float-right login_btn"
-                  />
-                </div>
-              </form>
-            </div>
-
-            <div className="card-footer">
-              <div className="d-flex justify-content-center links">
-                Don't have an account?
-                <Link to="/register" className="text-info">
-                  Register
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        </div>
       </div>
+    </Fragment>
+
     );
   }
 }
